@@ -1,0 +1,16 @@
+package com.utildemo;
+
+import java.util.HashMap;
+
+public class HashMapDemo {
+	
+	public static void main(String[] args) {
+		
+		HashMap<Integer, User> hm = new HashMap<Integer, User>();
+		
+		hm.put(10120, new User(101, "adam", "adam@email.com"));
+		hm.put(10130, new User(102, "chavi","chavi@email.com"));
+		System.out.println(hm);
+	}
+
+}

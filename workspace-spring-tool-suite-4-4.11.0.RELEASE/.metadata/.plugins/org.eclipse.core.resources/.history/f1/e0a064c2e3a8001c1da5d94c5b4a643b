@@ -1,0 +1,54 @@
+package com.utildemo;
+
+import java.io.Serializable;
+import java.util.Objects;
+
+public class User implements Serializable, Comparable<User> {
+		@Override
+	public int hashCode() {
+		return Objects.hash(city, email, userId, userName);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		return Objects.equals(city, other.city) && Objects.equals(email, other.email) && userId == other.userId
+				&& Objects.equals(userName, other.userName);
+	}
+
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+		private int userId;
+		private String userName;
+		private String email;
+		private String city;
+		@Override
+		public String toString() {
+			return "User [userId=" + userId + ", userName=" + userName + ", email=" + email + "]";
+		}
+		
+		public User(int userId, String userName, String email) {
+			this.userId = userId;
+			this.userName = userName;
+			this.email = email;
+			
+		}
+
+		@Override
+		public int compareTo(User o) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+	}
+
+
+

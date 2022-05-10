@@ -1,0 +1,11 @@
+package jdbcDemo;
+
+public class StringDemo {
+	
+	public static void main(String[] args) {
+		String s1 = "manish";
+		String s2 = new String("manish");
+		System.out.println(s1.equals(s2));
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.testapp;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest {
+	
+	@BeforeEach
+	public void callBefore() {
+		System.out.println("calling before");
+	}
+
+	@Test
+	void testAdd() {
+		assertEquals(25, new Calculator().add(12, 13));
+	}
+
+}

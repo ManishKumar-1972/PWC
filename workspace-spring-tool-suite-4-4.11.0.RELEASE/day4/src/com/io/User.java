@@ -1,0 +1,27 @@
+package com.io;
+
+import java.io.Serializable;
+
+public class User implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int userId;
+	private String userName;
+	private String email;
+	private String city;
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", userName=" + userName + ", email=" + email + "]";
+	}
+	
+	public User(int userId, String userName, String email) {
+		this.userId = userId;
+		this.userName = userName;
+		this.email = email;
+		
+	}
+
+}

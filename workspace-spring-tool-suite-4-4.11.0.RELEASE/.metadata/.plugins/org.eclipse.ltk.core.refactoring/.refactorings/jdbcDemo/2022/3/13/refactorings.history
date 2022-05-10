@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;jdbcDemo&apos; to &apos;mymavenpro/src/main/java&apos;&#x0A;- Original project: &apos;jdbcDemo&apos;&#x0A;- Destination element: &apos;mymavenpro/src/main/java&apos;&#x0A;- Original element: &apos;jdbcDemo/src/jdbcDemo&apos;" description="Copy package" destination="=mymavenpro/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src&lt;jdbcDemo" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1648027437075" version="1.0"/>
+</session>
