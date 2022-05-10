@@ -1,0 +1,31 @@
+package com.service;
+
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+@Service
+public class AppService {
+	
+	RestTemplate restTemplate;
+	
+	public String callApp(String location) {
+		
+		String response=restTemplate.exchange("http://emp-service/loademp/{location}", 
+				HttpMethod.GET,
+				null,
+				new ParameterizedTypeReference<String>() {
+		}).getBody();
+		return response;
+	}
+	public String callApp2() {
+		
+		String response=template.exchange("http://localhost:8060/mainapp/loadusers", 
+				HttpMethod.GET,
+				null,
+				new ParameterizedTypeReference<String>() {
+		}).getBody();
+		return response;
+	}
+}

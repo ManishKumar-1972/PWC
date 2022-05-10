@@ -1,0 +1,16 @@
+package com.example.pwcspring;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Aspect
+@Component
+public class AopAdvice {
+	
+	@Before(value="execution(* com.example.pwcspring.GreetingImpl.sayGreetings(..))")
+	public void callBefore() {
+		System.out.println("callig before");
+	}
+
+}

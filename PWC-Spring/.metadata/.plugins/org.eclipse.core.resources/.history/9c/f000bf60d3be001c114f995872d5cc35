@@ -1,0 +1,13 @@
+package com.example.pwcmsregistry;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class PwcMsRegistryApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PwcMsRegistryApplication.class, args);
+	}
+
+}

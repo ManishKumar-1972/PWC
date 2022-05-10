@@ -1,0 +1,11 @@
+package com.example.pwcspring;
+
+public class GreetingsImpl implements Welcome {
+
+	@Override
+	public void sayGreetings(String name) {
+		System.out.println("name " + "welcome to spring AOP");
+		
+	}
+
+}

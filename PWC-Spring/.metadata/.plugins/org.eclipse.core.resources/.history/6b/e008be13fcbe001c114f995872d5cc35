@@ -1,0 +1,53 @@
+package com.controller;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.model.Department;
+import com.model.Employee;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DeptController {
+
+	private static Map<String, List<Department>> empDB=new HashMap<String, List<Department>>();
+	static List<Department> lst=new ArrayList<Department>();
+	static {
+		empDB=new HashMap<String,List<Department>>();
+		
+		Department emp=new Department("prachi","BLR");
+		lst.add(emp);
+		emp=new Department("sonia","PUNE");
+		lst.add(emp);
+		empDB.put("india", lst);
+		
+		lst=new ArrayList<Department>();
+		emp=new Department("jacob","malay");
+		lst.add(emp);
+		emp=new Department("john","singapore");
+		lst.add(emp);
+		empDB.put("asia", lst);
+	}
+	@GetMapping("/loademp/{location}")
+	public List<Department> loadEmp(@PathVariable("location")String location){
+		List<Department> emplist=empDB.get(location);
+		if(emplist == null) {
+			emplist=new ArrayList<Department>();
+			Department emp=new Department("NA","NOT FOUND");
+			emplist.add(emp);
+		}
+		
+		return emplist;
+	}
+	
+	@GetMapping("/loademp")
+	public List<Department> loadEmp(){
+		return lst;
+	}
+	
+}

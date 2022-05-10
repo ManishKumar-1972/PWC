@@ -1,0 +1,13 @@
+package com.example.pwcmsempclient;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class PwcMsEmpclientApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PwcMsEmpclientApplication.class, args);
+	}
+
+}

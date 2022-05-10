@@ -1,0 +1,10 @@
+package com.dto;
+
+public class TableBooking {
+	
+	private String bookingid;
+	private int nofpax;
+	private String cusine;
+	private int starrating;
+
+}

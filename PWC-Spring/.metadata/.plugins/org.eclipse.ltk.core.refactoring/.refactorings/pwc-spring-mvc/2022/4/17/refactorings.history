@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.example.pwcspringmvc&apos; to &apos;pwc-spring-mvc-errorhandling/src/main/java&apos;&#x0A;- Original project: &apos;pwc-spring-mvc&apos;&#x0A;- Destination element: &apos;pwc-spring-mvc-errorhandling/src/main/java&apos;&#x0A;- Original element: &apos;pwc-spring-mvc/src/main/java/com.example.pwcspringmvc&apos;" description="Copy package" destination="=pwc-spring-mvc-errorhandling/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.pwcspringmvc" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1650449650603" version="1.0"/>
+</session>

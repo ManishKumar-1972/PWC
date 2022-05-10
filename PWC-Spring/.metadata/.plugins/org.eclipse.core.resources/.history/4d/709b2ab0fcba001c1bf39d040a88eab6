@@ -1,0 +1,29 @@
+package com.example.pwcspringmvc;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+
+
+@Service
+public class AppService {
+	
+	List<Register> lst = new ArrayList<Register>();
+	
+	public boolean loginValid(Login login) {
+		if(login.getUserName().equals("admin") && login.getPassword().equals("manager")) {
+			return true;
+		}
+		return false;
+	}
+	
+	public void addUser(Register register) {
+		lst.add(register);
+		System.out.println(lst);
+		
+	}
+	
+
+}

@@ -1,0 +1,9 @@
+package com.example.pwcspring;
+
+public class AopAdvice {
+	
+	public void callBefore() {
+		System.out.println("callig before");
+	}
+
+}
